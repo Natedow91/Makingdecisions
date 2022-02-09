@@ -6,7 +6,14 @@
   If it is not, console log "Coding has its challenges."
 */
 
-let lovescode = true;
+let lovescode = true; 
+  
+  if (lovescode === true) {
+   console.log("I love to code!");
+  } else {
+     console.log("Coding has its challenges");
+}  
+
 
 // For problems 2-3 use the following lines of code:
 var amysAge = 29
@@ -15,21 +22,35 @@ var amysBirthYear = 1991
 var brittanisBirthYear = 1986
 
 ////////// PROBLEM 2 //////////
+if(amysAge > brittanisAge) {
+  console.log("Amy is older");
+} else if (brittanisAge > amysAge) {
+  console.log("Brittani is older");
+} else { 
+  (amysAge === brittanisAge);
+  console.log("They are the same age")
+}
 
 /*
-  Using an if statement and a comparison operator, create code that will check if Amy or Brittani is older, and then console.log '{name} is older'. Hint: Consider what will happen if they are the same age. Handle this situation.
-*/
-
-//CODE HERE
-
-
+  Using an if statement and a comparison operator, create code that will check if Amy or Brittani is older, 
+  and then console.log '{name} is older'. Hint: Consider what will happen if they are the same age. Handle this situation.
 ////////// PROBLEM 3 //////////
 
+
 /*
-  Using an if statement and a comparison operator, create code that will check if Amy and Brittani were born in the same year. If they were, console.log 'Amy & Brittani were born in the same year'. If they were not, console.log 'Amy & Brittani were not born in the same year'
+  Using an if statement and a comparison operator, create code that will check if Amy and Brittani were born in the same year. 
+  If they were, console.log 'Amy & Brittani were born in the same year'. If they were not, console.log 'Amy & Brittani were not 
+  born in the same year'
 */
 
 //CODE HERE
+if (amysBirthYear === brittanisBirthYear) {
+  console.log("Amy & Brittani were born the same year"); 
+} else {
+  console.log("Amy & Brittani were not born the same year");
+}
+ 
+
 
 
 ////////// PROBLEM 4 //////////
@@ -38,12 +59,28 @@ let temperature = 55
 let rain = true
 
 /*
-  Using an if statement and a comparison operator, create code that will log a suggestion on what type of clothes one should wear for the day, based on the above temperature and rain.
-  If it is 80 degrees or above, and raining, one should wear a t-shirt and take an umbrella. If it is between 60 and 80 degrees, and raining, one should wear a rain-jacket. If it is 60 degrees or below, one should wear a jacket and carry an umbrella. Come up with your own clothing suggestions based on those temperature parameters when it is not raining.
+  Using an if statement and a comparison operator, create code that will log a suggestion on what type of clothes one should wear 
+  for the day, based on the above temperature and rain.
+  If it is 80 degrees or above, and raining, one should wear a t-shirt and take an umbrella. If it is between 60 and 80 degrees, 
+  and raining, one should wear a rain-jacket. If it is 60 degrees or below, one should wear a jacket and carry an umbrella. 
+  Come up with your own clothing suggestions based on those temperature parameters when it is not raining.
 */
 
 //CODE HERE
-
+if (temperature >= 80 && rain === true) {
+  console.log("Wear a t-shirt and take an umbrella")
+} else if(temperature < 60 && temperature - 80 && rain === true) {
+  console.log("One should wear a rain jacket")
+} else if(temperature <= 60 && rain === true){
+  console.log("wear a coat and bring umbrella")
+}
+else if (temperature >= 80 && rain === true) {
+  console.log("Wear a t-shirt")
+} else if(temperature < 60 && temperature - 80 && rain === true) {
+  console.log("shorts and a t-shirt")
+} else if(temperature <= 60 && rain === true){
+  console.log("wear a coat")
+}
 
 ////////// PROBLEM 5 //////////
 
@@ -52,32 +89,53 @@ let rain = true
 */
 
 //CODE HERE
-
+for(i = 0; i < 10; i++) {
+  console.log("Hello")
+}
 
 ////////// PROBLEM 6 //////////
 
 /*
-  Create a for-loop that runs 10 times, logging the numbers 1 through 10. Ex, on the first iteration it would log 1, on the second iteration it would log 2.
+  Create a for-loop that runs 10 times, logging the numbers 1 through 10. 
+  Ex, on the first iteration it would log 1, on the second iteration it would 
+  log 2.
 */
 
 //CODE HERE
+let num = 1
 
+for(i = 0; i < 10; i++) {
+  console.log(num)
+ num = num + 1
+}
 
 ////////// PROBLEM 7 //////////
 
 /*
-  Create a for-loop that logs the numbers 0 through 10 backwards. Ex, on the first iteration it would log 10, on the second iteration it would log 9.
+  Create a for-loop that logs the numbers 0 through 10 backwards. Ex, on the 
+  first iteration it would log 10, on the second iteration it would log 9.
 */
 
+
+for(i = 10; i >= 0; i--) {
+  console.log(i)
+}
 //CODE HERE
 
 let score = 0
 let passingScore = 7
 
+while (score < passingScore) {
+  console.log("Your score is not high enough")
+  score++
+}
 ////////// PROBLEM 8 //////////
 
 /*
-  Create a while-loop that logs "Your score is not high enough" while the score variable above is below passingScore. In each iteration of the loop, increase the score by one. If your code is successful, you will see your logged statement 7 times.
+  Create a while-loop that logs "Your score is not high enough" while the score 
+  variable above is below passingScore. In each iteration of the loop, 
+  increase the score by one. If your code is successful, you will see your 
+  logged statement 7 times.
 */
 
 //CODE HERE
@@ -87,9 +145,23 @@ let passingScore = 7
 ////////// PROBLEM 9 //////////
 /*
   Create a variable called 'changeMyMind' and set it equal to true. 
-  Check to see if changeMyMind is set to true or false, if it is true, change the status to false, if it is false, change the status to true.
+  Check to see if changeMyMind is set to true or false, if it is true, 
+  change the status to false, if it is false, change the status to true.
 
 */
+
+let changeMyMind = false
+
+if(changeMyMind === true) {
+  changeMyMind = false
+  console.log(changeMyMind)
+} else {
+  changeMyMind = true
+  console.log(changeMyMind)
+}
+
+
+
 
 //CODE HERE
 
@@ -98,7 +170,8 @@ let passingScore = 7
 
 //CODE HERE
 
-
+changeMyMind = !changeMyMind
+console.log(changeMyMind)
 
 ////////// ADVANCED PROBLEMS //////////
 
